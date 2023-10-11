@@ -94,7 +94,13 @@ export class KategoriService extends BaseResponse {
       take: pageSize,
     });
 
-    return this._pagination('OK', result, total, page, pageSize);
+    return this._pagination(
+      'Berhasil Menemukan Kategori',
+      result,
+      total,
+      page,
+      pageSize,
+    );
   }
 
   async findOne(id: number): Promise<responseSuccess> {
